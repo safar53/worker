@@ -1,0 +1,1343 @@
+*
+  padding: 0px
+  margin: 0px
+
+// fonts-start......
+
+@font-face
+  font-family: visby-bold
+  src: url(../fonts/VisbyCFBold.ttf)
+@font-face
+  font-family: visby-demi-bold
+  src: url(../fonts/VisbyCFDemiBold.ttf)
+@font-face
+  font-family: visby-heavy
+  src: url(../fonts/VisbyCFHeavy.ttf)
+@font-face
+  font-family: visby-extra-bold
+  src: url(../fonts/VisbyCFExtraBold.ttf)
+@font-face
+  font-family: visby-medium
+  src: url(../fonts/VisbyCFMedium.ttf)
+@font-face
+  font-family: visby-light
+  src: url(../fonts/VisbyCFLight.ttf)
+@font-face
+  font-family: visby-thin
+  src: url(../fonts/VisbyCFThin.ttf)
+
+// fonts-end......
+
+// common......
+
+.bg-main
+  background-color: #f4f7f9
+.bg-blue
+  background-color: #4783d9
+.bg-white
+  background-color: #ffffff
+.bg-transparent
+  background-color: transparent
+.border-none
+  border: none
+.border-radius-unset
+  border-radius: unset !important
+.visby-bold
+  font-family: visby-bold
+.visby-medium
+  font-family: visby-medium
+.visby-demi-bold
+  font-family: visby-demi-bold
+.visby-extra-bold
+  font-family: visby-extra-bold
+.visby-light
+  font-family: visby-light
+.focus-outline-none
+  &:focus
+    box-shadow: none
+    outline: none
+.height-unset
+  height: unset
+.p-45px
+  padding: 45px
+.pl-5px
+  @media only screen and (max-width: 1200px)  and (min-width: 576px)
+    padding-left: 5px
+.pr-5px
+  @media only screen and (max-width: 1200px)  and (min-width: 576px)
+    padding-right: 5px
+.top-59
+  @media only screen and (max-width: 768px) 
+    top: -59px !important
+.w-120px
+  text-align: center
+  @media only screen and (min-width: 1200px) 
+    width: 120px
+
+
+
+
+
+// header-start......
+
+.header-top
+  background-color: #ffffff
+.header-social
+  height: 40px
+  ul
+    list-style-type: none
+    margin-bottom: 0px
+    li
+      float: left
+      font-size: 12px
+      padding:
+        right: 25px
+        left: 0px
+      a 
+        color: #8893a6
+.header-sign
+  height: 40px
+.header-sign-ul 
+  list-style-type: none
+  margin-bottom: 0px
+  float: right
+.header-sign-ul-li 
+  float: left
+  &:first-child
+    border-right: 1px solid #000000
+    padding-left: 0px
+  &:last-child
+    padding-right: 0px
+  padding: 
+    left: 15px
+    right: 15px
+.header-sign-ul-li-a 
+  font-family: visby-light
+  text-transform: capitalize
+  text-decoration: none
+  color: #000000
+  &:hover
+    text-decoration: none
+    color: #000
+.elan
+  height: 25px
+  background-color: #00a651
+  color: #ffffff !important
+  border: none
+  border-radius: 8px
+  text-transform: unset
+  padding: 
+    left: 20px
+    right: 20px
+  font: 
+    family: visby-bold
+    size: 14px
+@media only screen and (max-width: 768px)  and (min-width: 576px)
+  .header-social
+    display: flex
+    justify-content: left
+  .elan
+    width: 100px
+    justify-content: center
+@media only screen and (max-width: 575px)
+  .header-social,.header-sign
+    display: flex
+    justify-content: center
+  .header-social
+    border-bottom: 1px solid lightgray
+  .elan
+    width: 100px
+@media only screen and (max-width: 1200px)
+  .navbar-list
+    li
+      a
+        font-size: 13px !important
+.header-bottom
+  background-color: #1f2532
+  z-index: 999
+.worker
+  font: 
+    family: visby-extra-bold
+.navbar-list
+  li    
+    padding:
+      left: 17px 
+      right: 17px 
+    border-bottom: 2px solid transparent
+    &:last-child
+      padding-right: 0px
+    &:active
+      border-bottom: 2px solid blue 
+    .nav-link 
+      color: #ffffff !important
+      font: 
+        family: visby-demi-bold
+        size: 14px
+.nav-last-li 
+  padding-right: 0px !important
+.fixed
+  position: fixed
+  top: 0
+  width: 100%
+.profiles
+  a 
+    font: 
+      family: visby-medium
+    &:hover
+      background-color: #1f2532
+      color: #ffffff
+
+// header-end......
+
+// index-start......
+
+.index-caption
+  padding:
+    top: 60px
+    bottom: 60px
+  h4
+    font-family: visby-extra-bold
+    color: #354052
+    margin-bottom: 3px
+  hr 
+    margin: 0px
+    width: 30px
+    height: 2px
+    background-color: #0d75de    
+.news-slider
+.slider-main,.slider-items
+  height: 390px
+@media only screen and (max-width: 1200px) and (min-width: 992px)
+  .slider-main,.slider-items
+    height: 330px
+@media only screen and (max-width: 991px) and (min-width: 768px)
+  .slider-main,.slider-items
+    height: 270px
+@media only screen and (max-width: 768px)
+  .slider-items
+    display: none
+  .slider-main,.slider-items
+    height: 240px
+.slider-main-image
+  border-radius: 8px
+  object-fit: cover
+.slider-main-caption-container
+  position: absolute
+  z-index: 99
+  bottom: 15px
+  left: 50px
+  overflow: hidden
+  &:hover
+    background-color: black
+  a   
+    text-decoration: none
+  h5
+    color: #ffffff
+    font-family: visby-extra-bold
+    font-size: 24px
+.slider-item
+  height: 130px
+  overflow: hidden
+  cursor: pointer
+  &:first-child
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px 
+    border-bottom: 1px solid #f4f7f9
+  &:last-child
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px 
+    border-top: 1px solid #f4f7f9 
+
+@media only screen and (max-width: 1200px) and (min-width: 992px)
+  .slider-item
+    height: 110px 
+  .slider-item-text
+    p 
+      font-size: 16px
+@media only screen and (max-width: 991px) and (min-width: 768px)
+  .slider-item
+    height: 90px  
+  .slider-item-text
+    p 
+      font-size: 14px
+.slider-item-image
+  object-fit: cover
+.slider-item-text
+  background-color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  p 
+    font-family: visby-bold
+    font-size: 18px
+.ellips-container
+  overflow: hidden
+  margin:
+    left: -15px
+    right: -15px
+.ellips
+  width: 150%
+  position: relative
+  left: -25%
+  padding: 90px 0
+  background-color: #4783d9
+  margin:
+    top: 110px
+    bottom: 110px
+  border-radius: 100%
+@media only screen and (max-width: 1500px) and (min-width: 1200px)
+  .ellips
+    padding: 80px 0
+@media only screen and (max-width: 1199px) and (min-width: 992px)
+  .ellips
+    padding: 70px 0
+@media only screen and (max-width: 991px) and (min-width: 768px)
+  .ellips
+    padding: 50px 0
+@media only screen and (max-width: 767px) and (min-width: 568px)
+  .ellips
+    padding: 30px 0
+
+.ellips-caption
+  h5
+    font:
+      family: visby-extra-bold
+      size: 36px !important
+    color: #ffffff
+  padding-bottom: 10px
+.ellips-info
+  font:
+    family: visby-medium
+    size: 16px
+  color: #ffffff
+  padding-top: 10px
+.ellips-button
+  a
+    button 
+      width: 200px
+      height: 80px
+      background-color: #ffffff
+      font: 
+        family: visby-extra-bold
+        size: 18px 
+      color: #4783d9
+      border-radius: 50px
+      border: none
+      cursor: pointer
+@media only screen and (max-width: 1500px) and (min-width: 1200px)
+  .ellips-button
+    a
+      button 
+        width: 130px
+        height: 60px
+        font-size: 16px
+@media only screen and (max-width: 1199px) and (min-width: 992px)
+  .ellips-button
+    a
+      button 
+        width: 110px
+        height: 50px
+        font-size: 14px
+  .ellips-caption
+    h5
+      font-size: 25px !important
+@media only screen and (max-width: 991px) and (min-width: 768px)
+  .ellips-button
+    a
+      button 
+        width: 90px
+        height: 40px
+        font-size: 12px
+  .ellips-caption
+    h5
+      font-size: 18px !important
+  .ellips-info
+    font-size: 14px
+@media only screen and (max-width: 767px) and (min-width: 568px)
+  .ellips-button
+    a
+      button 
+        width: 90px
+        height: 40px
+        font-size: 13px
+  .ellips-caption
+    h5
+      font-size: 16px !important
+  .ellips-info
+    font-size: 14px
+@media only screen and (max-width: 567px)
+  .ellips-button
+    a
+      button 
+        width: 90px
+        height: 40px
+        font-size: 13px
+  .ellips-caption
+    h5
+      font-size: 16px !important
+    padding-right: 0px !important
+  .ellips-info
+    font-size: 14px
+    padding-right: 0px !important
+  .sm-75
+    width: 75%
+.article-image
+  width: 270px
+  height: 330px
+  background-color: red
+  position: relative
+  bottom: 100px
+  left: 95px
+  border: 10px solid #ffffff
+  border-radius: 3px
+  img   
+    object-fit: cover
+.article-content
+  h3 
+    font:
+      family: visby-extra-bold
+      size: 32px
+    color: #ffffff
+  p 
+    font:
+      family: visby-medium
+      size: 16px
+    color: #ffffff
+    margin-right: 30px
+  a
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: #ffffff
+    text-decoration: underline
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled 
+  display: block
+.owl-stage-outer
+  padding-top: 55px
+.owl-nav
+  position: absolute
+  top: 50%
+  transform: translateY(-40px)
+  width: 100%
+.owl-prev,.owl-next
+  width: 80px
+  height: 80px
+  background-color: transparent
+  border: 2px solid #ffffff
+  border-radius: 50%
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  position: absolute
+.owl-next
+  transform: translateX(50%)
+  right: 0
+.owl-prev
+  transform: translateX(-50%)
+  left: 0
+.owl-next.disabled
+  display: block
+.owl-prev.disabled
+  display: block
+.arrow
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #fff
+  color: #c3c3c3
+.article-infos
+  border-right: 2px solid #ffffff
+  padding-right: 0px
+  &:last-child
+    border-right: none
+  span
+    font:
+      family: visby-medium
+      size: 14px
+    color: #ffffff
+  i 
+    color: #ffffff
+.custom-card-button
+    border-top-left-radius: 50%
+    border-bottom-left-radius: 50%
+    border-top-right-radius: 0px
+    border-bottom-right-radius: 0px
+    padding-left: 16px
+    float: right
+.padding-right-20
+  padding-right: 20px
+.custom-card-date
+  font:
+    family: visby-medium
+    size: 14px
+  color: #a0a9b8
+.custom-card-title
+    font:
+      family: visby-demi-bold
+      size: 20px
+    color: #000000
+    height: 118px
+.custom-card-text
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: #000000
+
+
+// index-end......
+
+// tehsil-tedbir-start......
+
+.bg-caption
+  height: 190px
+  background-image: url(../img/4.webp)
+  background-position: center
+  background-size: cover
+.page-caption
+  h1
+    font:
+      family: visby-extra-bold
+      size: 24px
+    color: #ffffff
+    text-transform: uppercase  
+
+
+// tehsil-tedbir-end......
+
+// tehsil-daxili-start......
+
+.page-path
+  span
+    font:
+      family: visby-extra-bold
+      size: 20px
+    a
+      text-decoration: none
+      color: #000000
+.fb ,.yt,.ins,.in,.gm
+  display: inline-block
+  width: 30px
+  height: 30px
+  margin-right: 5px
+  background:
+    size: cover
+    position: center
+.yt
+  background:
+    image: url("../img/youtube.png")
+.fb
+  background:
+    image: url("../img/facebook.png")
+.in
+  background:
+    image: url("../img/linkedin.png")
+.gm
+  background:
+    image: url("../img/gmail.png")
+.ins
+  background:
+    image: url("../img/instagram.png")
+.big-card-title
+  font-size: 26px
+
+// tehsil-daxili-end......
+
+// vakansiyalar-start......
+
+.bg-caption-vacancies
+  background-image: url(../img/4.webp)
+  background-position: center
+  background-size: cover
+.vacancies-caption 
+  font: 
+    size: 24px
+    family: visby-bold
+  color: #ffffff
+.site-vacancies
+  font: 
+    size: 16px
+    family: visby-medium
+  color: #ffffff
+.vacancy-search-info
+  margin: auto
+  width: 60%
+.vacancy-categories  
+  font:
+    family: visby-demi-bold
+  color: gray
+  &:hover
+    background-color: gray
+    color: #ffffff
+.select-vacancy-category
+  background-color: #ffffff
+  border-right: 1px solid lightgray
+  color: gray
+  border-top-left-radius: 0.25rem
+  border-bottom-left-radius: 0.25rem
+.vacancy-search
+  background-color: #0d75de
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  color: #ffffff
+  border: none
+  padding-left: 3px
+@media only screen and (max-width: 768px)
+  .vacancy-search
+    border-radius: unset
+  .select-vacancy-category
+    border-radius: unset
+    padding-top: 7px
+    padding-bottom: 7px
+  .enter-vacancy-place
+    border-bottom-left-radius: 0.25rem
+  .vacancies-caption
+    font-size: 20px
+  .site-vacancies
+    font-size: 14px
+  .enter-vacancy-name
+    border-radius: unset
+    padding-left: 5px
+    font-size: 16px
+.enter-vacancy-name
+  border-radius: unset
+.enter-vacancy-place
+  border-radius: unset
+  border: none
+.mobile-vacancy-name
+  display: none
+@media only screen and (max-width: 992px) and (min-width: 768px)
+  .desktop-vacancy-name
+    display: none
+  .mobile-vacancy-name
+    display: block !important
+  .select-vacancy-category
+    font-size: 14px
+
+
+.select-container
+  position: relative
+  select
+    background-color: #ffffff
+    -webkit-appearance: none
+    border: none
+    border-radius: 0.25rem
+    font:
+      family: visby-bold
+      size: 16px
+.td-container
+  position: relative
+  background-color: #ffffff
+  -webkit-appearance: none
+  border: none
+  border-radius: 0.25rem
+  text-align: center
+  font:
+    family: visby-bold
+    size: 16px
+
+
+.table-container
+  overflow-x: auto
+  table 
+    min-width: 100%
+@media only screen and (max-width: 1200px) and (min-width: 992px)
+  .table-container
+    table 
+      min-width: 150%
+@media only screen and (max-width: 991px) and (min-width: 540px)
+  .table-container
+    table 
+      min-width: 200%
+@media only screen and (max-width: 539px)
+  .table-container
+    table 
+      min-width: 250%
+
+
+.table-header
+  padding: 10px !important
+  border-bottom: none !important
+  font:
+    family: visby-bold
+    size: 16px
+td 
+  font:
+    family: visby-medium
+    size: 14px
+.open-vacancy
+  a 
+    text-decoration: none
+    color: #000000
+
+.vacancies-choose-category
+  font:
+    family: visby-bold
+    size: 18px
+
+.selectBox
+  border-radius: 5px
+  list-style-type: none
+  .select
+    border-bottom: 1px solid #f4f7f9
+    background-color: #FFFFFF
+    cursor: pointer
+    font-family: visby-medium
+    font-size: 14px
+    color: #000000
+    i
+      float: right
+    &:first-child
+      border-top-right-radius: 5px
+      border-top-left-radius: 5px
+      margin-top: 0px
+    &:last-child
+      border-bottom-right-radius: 5px
+      border-bottom-left-radius: 5px         
+    .options
+      display: none
+      .option
+        background-color: #FFFFFF
+        display: flex
+        align-items: center
+        color: #999999
+        position: relative
+        input[type="checkbox"]
+          display: none
+        input[type="checkbox"] + label
+          position: absolute
+          right: 17px
+        input[type="checkbox"] + label span
+          display: inline-block
+          width: 19px
+          height: 19px
+          // background-color: #FFFFFF
+          cursor: pointer
+          border-radius: 3px
+          border:
+            top: 1px solid lightgray
+            right: 1px solid lightgray
+        input[type="checkbox"]:checked + label span
+          background: url(../img/checked.png) -19px top no-repeat
+          background-color: green
+          background-size: 13px 13px
+          background-position: center
+          border: none
+.category 
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"] + label
+    position: absolute
+    right: 17px
+  input[type="checkbox"] + label span
+    display: inline-block
+    width: 19px
+    height: 19px
+    background-color: #FFFFFF
+    cursor: pointer
+    border-radius: 3px
+    border:
+      top: 1px solid lightgray
+      right: 1px solid lightgray
+  input[type="checkbox"]:checked + label span
+    background: url(../img/checked.png) -19px top no-repeat
+    background-color: green
+    background-size: 13px 13px
+    background-position: center
+    border: none
+.badge
+  width: 18px
+  height: 18px
+  border-radius: 50%
+  background-color: #999999
+  color: black
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  font-size: 10px
+  position: absolute
+  right: 40px
+          
+
+// vakansiyalar-end......
+
+
+// login-start......
+
+
+.login-header 
+  h2
+    font: 
+      family: visby-extra-bold
+  p 
+    font: 
+      family: visby-bold
+      size: 16px
+    color: #929cad
+.login-email,.login-password
+  font:
+    family: visby-bold
+    size: 18px
+@media only screen and (max-width: 375px)
+  .pr-0px
+    padding-right: 0px !important
+  .pl-0px
+    padding-leftt: 0px !important
+  .login-password
+    label
+      font-size: 14px !important
+.login-button
+  button
+    font: 
+      family: visby-bold
+      size: 18px
+  a
+    text-decoration: none
+    font-family: visby-bold
+    color: #929cad
+.invite-signup
+  button
+    border: 1px solid #0d75de
+    font: 
+      family: visby-bold
+      size: 18px
+    color: #0d75de
+    &:hover
+      border: 1px solid #0d75de
+      text-decoration: none
+  p 
+    font: 
+      family: visby-bold
+      size: 16px
+    color: #929cad
+@media only screen and (max-width: 992px)
+  .login-page-image
+    display: none
+  .login-page-data
+    border-right: none
+    border-radius: 0.25rem
+
+
+// login-end......
+
+
+// vakansiya-ver-start......
+
+
+.vacancyCaption
+  font: 
+    family: visby-heavy
+.current-position
+  label
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: gray
+  input
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: #000000
+.upload           
+  label
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: gray
+  input
+    font:
+      family: visby-demi-bold
+      size: 16px
+    color: #000000
+.customButton
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #000000
+  font: 
+    family: visby-demi-bold
+  background-color: #e8eaec
+  border-radius: 5px
+  cursor: pointer
+@media only screen and (max-width: 767px)
+  .customButton
+    margin-top: 15px
+.vacancyTextarea
+  label
+    font:
+      family: visby-demi-bold
+    color: gray
+  textarea
+    font:
+      family: visby-demi-bold
+    color: #000000
+.selectCategory
+  label
+    font:
+      family: visby-demi-bold
+    color: gray
+  select 
+    font:
+      family: visby-demi-bold
+.vacancyContact   
+    font:
+      family: visby-demi-bold
+.buttonDecline
+  background-color: #e0e2e4
+  color: #000000
+  font-family: visby-demi-bold
+  font-size: 20px
+.buttonSubmit
+  background-color: #4bc47d
+  color: #ffffff
+  font-family: visby-demi-bold
+  font-size: 20px
+.vacancySalary
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"] + label
+  input[type="checkbox"] + label span
+    display: inline-block
+    width: 19px
+    height: 19px
+    background-color: #FFFFFF
+    cursor: pointer
+    border-radius: 3px
+    border: 1px solid lightgray
+  input[type="checkbox"]:checked + label span
+    background: url(../img/checked.png) -19px top no-repeat
+    background-color: #ffffff
+    background-size: 13px 13px
+    background-position: center
+
+
+// vakansiya-ver-end......
+
+
+// vakansiya-daxili-start......
+
+
+.vacancy-inside-title
+  h3 
+    font-family: visby-bold
+.vacancy-infos
+  border-bottom: 2px solid lightgray
+.salary-info
+  border-right: 2px solid lightgray
+  display: inline-block
+  span
+    background-color: #0d75de
+    border-radius: 4px
+    color: #ffffff
+    font-size: 18px
+    padding: 10px
+  button
+    font-size: 18px
+.company-name
+  display: inline-block
+  border-right: 2px solid lightgray
+  &:last-child
+    border-right: none
+  i   
+    color: gray
+  h5
+    display: inline-block
+.about-job
+  p 
+    font:
+      family: visby-medium
+      size: 18px
+    color: #8893a6
+.demands
+  border-bottom: 2px solid lightgray
+  ul 
+    list-style-type: none
+    li 
+      font-size: 20px
+      color: #8893a6
+      span
+        border-radius: 50%
+        width: 10px
+        height: 10px
+        background-color: #0d75de
+        display: inline-block
+.job-infos
+  ul 
+    list-style-type: none
+    li 
+      font:
+        family: visby-bold
+        size: 20px
+      padding:
+        top: 10px
+        bottom: 10px
+.info-data
+  color: #8893a6
+.info-name
+  color: #000000
+@media only screen and (max-width: 768px)
+  .company-name,.salary-info
+    display: block
+    border-right: none
+  .salary-info
+    margin-top: 25px
+    margin-bottom: 25px
+
+// vakansiya-daxili-end......
+
+// hazir-biznes-daxili-start......
+
+.hazir-biznes-daxili-elaqe
+  width: 30px
+  height: 30px
+  display: inline-block
+  background-image: url(../img/call.png)
+  background-size: cover
+  background-position: center
+  margin-right: 10px
+
+// hazir-biznes-daxili-end......
+
+
+// FAQ-start......
+
+
+
+.captionFAQ
+  p
+    color: #9595af
+.infoFAQ
+  border-bottom: 2px solid #9595af
+  cursor: pointer
+.question
+  display: flex
+  align-items: center
+  color: #9595af
+  position: relative
+  h5
+    width: 95%
+.signs
+  width: 25px
+  height: 25px
+  border: 2px solid #9595af
+  border-radius: 50%
+  color: #9595af
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 0px
+.additional-info
+  display: none
+
+// FAQ-end......
+
+// isci-profilleri-start......
+
+
+.notification
+  position: relative
+  cursor: pointer
+  &:last-child
+    padding-right: 15px
+  span
+    position: absolute
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background-color: blue
+    color: #ffffff
+    font-size: 10px
+    font-family: visby-medium
+    display: flex
+    justify-content: center
+    align-items: center
+    top: -6px
+    right: 10px
+.opening-notification
+  border-radius: 0.25rem
+  background-color: #fff
+  position: absolute
+  z-index: 55
+  width: 300px
+  top: 55px
+  right: 0px
+.opening-notification:after 
+  content: ""
+  position: absolute
+  top: -25px
+  right: 20px
+  border-style: solid
+  border-width: 0 10px 25px 10px
+  border-color: #fff transparent
+  display: block
+  z-index: 1
+@media only screen and (max-width: 768px)
+  .opening-notification
+    right: unset
+    left: -20px
+  .opening-notification:after
+    right: unset
+    left: 20px
+.opening-notification-ul
+  list-style-type: none
+.opening-notification-ul-li 
+  margin:
+    top: 15px
+    bottom: 15px
+  width: 265px
+  height: 45px
+  overflow: hidden
+.opening-notification-ul-li-a
+  text-decoration: none
+  font-family: visby-medium
+  &:hover    
+    text-decoration: none
+.opening-notification-img
+  border-radius: 50%
+  margin-right: 15px
+.elan-social
+  &:hover
+    text-decoration: none
+.opening
+  border-radius: 0.25rem
+  background-color: #fff
+  position: absolute
+  z-index: 55
+  width: 180px
+  top: 60px
+  right: 105px
+@media only screen and (max-width: 768px) and (min-width: 576px)
+  .opening
+    right: 190px
+@media only screen and (max-width: 575px) and (min-width: 430px)
+  .opening
+    right: 35%
+@media only screen and (max-width: 429px)
+  .opening
+    right: 45%
+.opening:after 
+  content: ""
+  position: absolute
+  top: -25px
+  right: 20px
+  border-style: solid
+  border-width: 0 10px 25px 10px
+  border-color: #fff transparent
+  display: block
+  z-index: 1
+.opening-ul
+  list-style-type: none
+  float: right
+  padding: 15px
+.opening-ul-li 
+  margin:
+    top: 15px
+    bottom: 15px
+  &:hover
+    background-color: #1f2532
+    .opening-ul-li-a
+      color: #ffffff
+.opening-ul-li-a
+  color: #000000
+  text-decoration: none
+  font-family: visby-medium
+  &:hover    
+    color: #000000
+    text-decoration: none
+@media only screen and (max-width: 768px)
+  .special-socials
+    display: flex
+    justify-content: center
+    &:first-child
+      border-bottom: 1px solid lightgray
+.profile-img
+  border-radius: 50%
+  cursor: pointer
+.profile-name
+  cursor: pointer
+@media only screen and (max-width: 430px)
+  .profile-img
+    display: inline-block !important
+  .profile-name
+    display: none
+.workers-card-img
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  margin: auto
+
+// isci-profilleri-end......
+
+// profile-settings-start......
+
+.profile-image
+  width: 95px
+  height: 95px
+  border-radius: 50%
+  overflow: hidden
+#profile-image 
+  width: inherit
+  height: inherit 
+@media only screen and (max-width: 530px)
+  .profile-picture-change 
+    padding-left: 0px !important
+  .delete
+    margin-left: 0px !important
+
+
+// profile-settings-end......
+
+// profile-start......
+
+.profile-picture-main
+  width: 170px
+  height: 170px
+  border-radius: 50%
+  overflow: hidden
+.profile-picture-img
+  width: inherit
+  height: inherit
+.profile-name
+  font-size: 24px
+.profile-position
+  font-size: 18px
+.profile-workplace
+  font-size: 18px
+.profile-shared
+  color: #000000
+  &:hover
+    text-decoration: none
+    color: #0d75de
+    border-bottom: 5px solid #0d75de
+  &:active
+    text-decoration: none
+    color: #0d75de
+    border-bottom: 5px solid #0d75de
+.info-box
+  border: 1px solid #000000
+  &:last-child
+    margin-bottom: 0px !important
+.box-caption
+  font-size: 24px
+  span  
+    cursor: pointer
+.box-infos
+  font-size: 18px
+  border-bottom: 1px solid lightgray
+  &:last-child
+    border: none
+    padding-bottom: none
+.progressbar
+  width: 152px
+  height: 16px
+  border: 1px solid #000000
+  border-radius: 8px
+  display: inline-block
+  position: relative
+  overflow: hidden
+.stop-propagation
+  position: absolute
+  background-color: red
+  pointer-events: none
+.modal 
+  display: none
+  position: fixed
+  z-index: 9999
+  left: 0
+  top: 0
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+.modal-content 
+  background-color: #fefefe
+  margin: 15% auto
+  border: 1px solid gray
+.close
+  width: 30px
+  height: 30px
+  background-color: red
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center 
+  color: #aaa
+  font-size: 20px
+  color: #ffffff
+  font-weight: bold
+  position: absolute
+  right: -13px
+  top: -15px
+  &:hover,
+  &:focus
+    cursor: pointer
+
+
+// profile-end......
+
+// paylashimlar-start......
+
+
+.profile-picture-second
+  width: 60px
+  height: 60px
+  border-radius: 50%
+  overflow: hidden
+.profile-name-second
+  font-size: 18px
+.profile-position-second
+  font-size: 15px
+.events-container 
+  border-top: 1px solid lightgray
+.event 
+  button
+    color: gray
+    background-color: inherit
+    border: none
+    cursor: pointer
+    &:focus
+      border: none
+      outline: none
+      box-shadow: none
+
+
+
+
+// paylashimlar-end......
+
+// footer-start......
+
+.bottom-socials
+  background-color: #1f2531
+  ul
+    list-style-type: none
+    li
+      display: flex
+      justify-content: center
+      align-items: center
+      float: left
+      width: 40px
+      height: 40px
+      margin:
+        top: 60px
+        bottom: 60px
+        left: 10px
+        right: 10px
+      border-radius: 50%
+      background-color: #6d7587
+      a
+        color: #1f2531
+.rights
+  background-color: #121823
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50px
+  p
+    color: #ffffff
+    font-family: visby-demi-bold
+    margin-bottom: 0px  
+
+// footer-end......
